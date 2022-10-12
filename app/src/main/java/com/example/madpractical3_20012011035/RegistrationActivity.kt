@@ -1,15 +1,18 @@
-package com.example.madpractical3_20012011034
+package com.example.madpractical3_20012011035
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.madpractical3_20012011034.databinding.ActivityRegistrationBinding
+import com.example.madpractical3_20012011035.R
+import com.example.madpractical3_20012011035.databinding.ActivityRegistrationBinding.*
+import com.example.madpractical3_20012011035.databinding.ActivityRegistrationBinding
+import com.example.madpractical3_20012011035.databinding.ActivityRegistrationBinding.inflate
 
 class RegistrationActivity : AppCompatActivity() {
     private lateinit var binding : ActivityRegistrationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRegistrationBinding.inflate(layoutInflater)
+        inflate(/* inflater = */ layoutInflater).also { binding = it }
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
